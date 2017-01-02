@@ -6,7 +6,8 @@
 
 #define PRINT_TIME(logFileHandle)\
 {\
-	time_t 
+	time_t day;
+	struct tm *tm;
 }
 
 int main()
