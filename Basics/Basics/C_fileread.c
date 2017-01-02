@@ -1,5 +1,5 @@
 #ifdef __cplusplus
-	extern "C"{
+extern "C" {
 #endif
 #include <stdio.h>
 #include <stdlib.h>
@@ -11,7 +11,8 @@
 	struct tm *tm;\
 	time(&day);\
 	tm = (localtime(&day));\
-	fprintf(logFileHandle,"%02d:
+	fprintf(logFileHandle,"\"TIME:\" %02d:%02d:%02d\n\n",tm->tm_hour,tm->tm_min,tm->tm_sec);
+
 
 
 }
