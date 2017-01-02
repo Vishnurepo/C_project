@@ -8,6 +8,7 @@
 {\
 	time_t day;
 	struct tm *tm;
+	
 }
 
 int main()
