@@ -4,6 +4,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+#define PRINT_TIME(logFileHandle)\
+{\
+	time_t 
+}
 
 int main()
 {
