@@ -7,9 +7,11 @@
 
 #define PRINT_TIME(logFileHandle)\
 {\
-	time_t day;
-	struct tm *tm;
-	tm = localtime(&day);
+	time_t day;\
+	struct tm *tm;\
+	time(&day);\
+	tm = (localtime(&day));\
+	fprintf(logFileHandle,"%02d:
 
 
 }
