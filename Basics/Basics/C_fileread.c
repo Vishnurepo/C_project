@@ -27,13 +27,22 @@ int main(int argc, char *argv)
 	while (!feof(fp))
 	{
 		fgets(Buffer, BUFFSIZE, fp);
-		vistokenize(Buffer, &numtokens, &tokens);
-
+		vistokenize(Buffer, &tokens);
+		
 	}
 
 
 }
 
 #ifdef __cplusplus	
+}
+
+int vistokenize(char *line, char **tokens)
+{
+	while(strcmp(*line,"\n")!=0 )
+	{
+		line = strchr(line,',');
+		
+	}
 }
 # endif
